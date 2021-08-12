@@ -6,7 +6,7 @@ import unittest
 class NewVisitorTest(unittest.TestCase):
 
     def setUp(self):
-        self.browser = webdriver.Firefox()
+        self.browser = webdriver.Chrome()
 
     def tearDown(self):
         self.browser.quit()
@@ -37,6 +37,11 @@ class NewVisitorTest(unittest.TestCase):
         rows = table.find_elements_by_tag_name('tr')  
         self.assertTrue(
             any(row.text == '1: Estudar testes funcionais' for row in rows)
+        )
+
+        self.assertTrue(
+            any(row.text == '1: Estudar testes funcionais' for row in rows),
+            "New to-do item did not appear in table"
         )
         
         # Ainda existe uma caixa de texto convidando para adicionar outro item
