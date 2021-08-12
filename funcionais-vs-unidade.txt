@@ -1,0 +1,2 @@
+Diferenca 1: Os teste de unidade verificam os módulos individuais do sistema, já os testes funcionais verificam as funcionalidades do sistema.
+Diferenca 2: Os testes de unidade informam ao desenvolvedor que o código está fazendo as coisas corretamente, já testes funcionais informam ao desenvolvedor que o código está fazendo as coisas certas.
