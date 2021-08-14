@@ -34,10 +34,10 @@ def logout(request):
 
 def send_login_email(request):
     email = request.POST['email']
-    # send_mail(
-    #     'Your login link for Superlists',
-    #     'body text tbc',
-    #     'noreply@superlists',
-    #     [email],
-    # )
+    send_mail(
+        'Your login link for Superlists',
+        'body text tbc',
+        'noreply@superlists',
+        [email],
+    )
     return redirect('/')
